@@ -88,4 +88,4 @@ A colaboração é uma parte essencial da comunidade Python, e encorajamos você
 
 Então, prepare-se para mergulhar em um mar de código Python! Junte-se a nós no Repositório Python e embarque em uma jornada desafiadora de aprendizado, compartilhamento e aprimoramento de suas habilidades de programação. Estamos ansiosos para ver suas conquistas e ajudá-lo(a) a se tornar um(a) mestre na arte da programação Python!
 
- Consulte os exemplos nas pastas [`Básico`](https://github.com/area-41/Python/tree/main/Basico), [`Intermediário`](https://github.com/area-41/Python/tree/main/Intermediario), [`Avançado`](https://github.com/area-41/Python/tree/main/Avancado) e use sua criatividade para criar os seus códigos 😊.
+ Consulte os exemplos nas pastas [`Básico`](https://github.com/area-41/Python/tree/main/Basico), [`Intermediário`](https://github.com/area-41/Python/tree/main/Intermediario), [`Avançado`](https://github.com/area-41/Python/tree/main/Avancado) e use sua criatividade para criar os seus códigos 👽.
