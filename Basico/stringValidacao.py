@@ -9,21 +9,57 @@ retornar True/False em 5 linhas sendo:
 
 
 def stringValidator(s):
-    for i in range(1, 6):
-        if s.isalnum():
-            print('True')
-        elif s.isalpha():
-            print('True')
-        elif s.isdigit():
-            print('True')
-        elif s.islower():
-            print('True')
-        elif s.isupper():
-            print('True')
-        else:
-            print('False')
+    list = []
+
+    opcao = []
+    for char in s:
+        opcao.append(str.isalnum(char))
+    if True in opcao:
+        list.append(True)
+    else:
+        list.append(False)
+
+
+    opcao = []
+    for char in s:
+        opcao.append(str.isalpha(char))
+    if True in opcao:
+        list.append(True)
+    else:
+        list.append(False)
+
+    opcao = []
+    for char in s:
+        opcao.append(str.isdigit(char))
+    if True in opcao:
+        list.append(True)
+    else:
+        list.append(False)
+
+    opcao = []
+    for char in s:
+        opcao.append(str.islower(char))
+    if True in opcao:
+        list.append(True)
+    else:
+        list.append(False)
+
+    opcao = []
+    for char in s:
+        opcao.append(str.isupper(char))
+    if True in opcao:
+        list.append(True)
+    else:
+        list.append(False)
+
+    for elem in list:
+        print(elem)
+
 
 
 if __name__ == '__main__':
-    s = input()
-    stringValidator(s)
+    # s = input()
+    s = 'qA2'
+    stringValidator(s) # retorno esperado T,T,T,T,T
+
+    stringValidator('123') # retorno esperado T, F, T, F, F
