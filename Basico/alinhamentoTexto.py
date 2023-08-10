@@ -2,7 +2,7 @@
 Alinhamento de texto para formar uma Logo, deve usar números ímpares
 """
 
-thickness = int(input()) #This must be an odd number
+thickness = int(input())  # This must be an odd number
 c = 'H'
 
 #Top Cone
