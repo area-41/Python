@@ -35,8 +35,12 @@ def print_rangoli(size):
     e porque dobra por ter o caracter hífen, mais 1 que representa a letra central da linha."""
 
     central_line = 4*(size - 1) + 1
-    letters = [chr(i + 97) for i in range(size)]
-    letters_r = [chr(size - i + 96) for i in range(size)]
+    letters = list(string.ascii_lowercase)[0:size]
+    letters_r = letters[::-1]
+
+    # Para usar o sistema nativo chr sem precisar importar o string, mas a partir do 97 é caracter romano
+    # letters = [chr(i + 97) for i in range(size)]
+    # letters_r = [chr(size - i + 96) for i in range(size)]
 
     # Descrição:
     print(f"Para o tamanho {size}, gerou {central_line} caracteres na linha central,"
