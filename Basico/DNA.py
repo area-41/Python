@@ -12,13 +12,7 @@ def count_substring(string, sub_string):
     return count
 
 
-def count_substring2(string, sub_string):
-    return {s: string.count(sub_string) for s in set(string)}
-
-
 if __name__ == '__main__':
-    string = input().strip()
-    sub_string = input().strip()
-
-    print(count_substring(string, sub_string))
-    print(count_substring2(string, sub_string))
+    string = input("Insira a série na qual deseja procurar: ").strip()
+    sub_string = input("Digite as letras que procura: ").strip()
+    print(f"Foi(ram) encontrada(s) {count_substring(string, sub_string)} vez(es).")
