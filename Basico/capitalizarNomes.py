@@ -6,10 +6,10 @@ Caso tenha espaço, o primeiro nome e sobrenome com a 1a letra maiúscula.
 
 def check(s):
     for i in s:
-        print(f"\nAntes da mudança: {i}")
+        print(f"\nAntes da mudança: \n\t{i}")
         #  divide nos espaços e capitaliza cada pedaço
         a=[j.capitalize() for j in i.split(" ")]
-        print("\t"," ".join(a))
+        print("Após a mudança:\n\t"," ".join(a))
 
 
 if __name__ == '__main__':
