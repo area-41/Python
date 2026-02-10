@@ -46,6 +46,7 @@ Execute o sistema:
     -- Bash
     python main.py
 
+![Python Tests](https://github.com/area-41/Python/actions/workflows/python-tests.yml/badge.svg)
 
 Desenvolvido por [Victor Marques](https://www.linkedin.com/in/victor-marques-data-analyst/) Conecte-se comigo no LinkedIn
 
