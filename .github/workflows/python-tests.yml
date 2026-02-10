@@ -22,7 +22,7 @@ jobs:
 
 
     - name: Run Tests
-      # Para o Actions achar a pasta 'tests'
+      # Para o Actions achar a pasta 'tests' dentro da estrutura
       working-directory: ./concessionaria
       run: |
         # Comando para descobrir e rodar os testes na pasta tests
