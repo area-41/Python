@@ -23,7 +23,7 @@ jobs:
 
     - name: Run Tests
       # Para o Actions achar a pasta 'tests' dentro da estrutura
-      working-directory: ./concessionaria
+      working-directory: ./Empresas/concessionaria
       run: |
         # Comando para descobrir e rodar os testes na pasta tests
         python -m unittest discover tests
