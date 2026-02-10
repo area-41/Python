@@ -22,6 +22,8 @@ jobs:
 
 
     - name: Run Tests
+      # Para o Actions achar a pasta 'tests'
+      working-directory: ./concessionaria
       run: |
         # Comando para descobrir e rodar os testes na pasta tests
         python -m unittest discover tests
