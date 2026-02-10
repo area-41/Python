@@ -1,6 +1,6 @@
 <h1>
      <img align="center" width="60px" src="https://github.com/area-41/Python/assets/87396846/ef394388-3946-44b6-9f55-061b594c84d1">
-    <span> Open Python Source Studies no GitHub</span>
+    <span>Python Studies</span>
 </h1>
 
 ### Material com soluções de programação em Python
