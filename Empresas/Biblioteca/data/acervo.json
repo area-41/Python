@@ -1,0 +1,170 @@
+[
+    {
+        "titulo": "O Hobbit",
+        "autor": "J.R.R. Tolkien",
+        "ano": 1937,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "1984",
+        "autor": "George Orwell",
+        "ano": 1949,
+        "status": "Emprestado"
+    },
+    {
+        "titulo": "Dom Casmurro",
+        "autor": "Machado de Assis",
+        "ano": 1899,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "O Pequeno Príncipe",
+        "autor": "Antoine de Saint-Exupéry",
+        "ano": 1943,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Frankenstein",
+        "autor": "Mary Shelley",
+        "ano": 1818,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "O Algoritmo Mestre",
+        "autor": "Pedro Domingos",
+        "ano": 2015,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Admirável Mundo Novo",
+        "autor": "Aldous Huxley",
+        "ano": 1932,
+        "status": "Emprestado"
+    },
+    {
+        "titulo": "Código Limpo",
+        "autor": "Robert C. Martin",
+        "ano": 2008,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+        "autor": "J.R.R. Tolkien",
+        "ano": 1954,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Orgulho e Preconceito",
+        "autor": "Jane Austen",
+        "ano": 1813,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "O Processo",
+        "autor": "Franz Kafka",
+        "ano": 1925,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Duna",
+        "autor": "Frank Herbert",
+        "ano": 1965,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "A Metafísica",
+        "autor": "Aristóteles",
+        "ano": -350,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Crime e Castigo",
+        "autor": "Fiódor Dostoiévski",
+        "ano": 1866,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "O Homem e seus Símbolos",
+        "autor": "Carl Jung",
+        "ano": 1964,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Sapiens: Uma Breve História da Humanidade",
+        "autor": "Yuval Noah Harari",
+        "ano": 2011,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "O Programador Pragmático",
+        "autor": "Andrew Hunt",
+        "ano": 1999,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Arquitetura Limpa",
+        "autor": "Robert C. Martin",
+        "ano": 2017,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Ensaio sobre a Cegueira",
+        "autor": "José Saramago",
+        "ano": 1995,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Moby Dick",
+        "autor": "Herman Melville",
+        "ano": 1851,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "O Guia do Mochileiro das Galáxias",
+        "autor": "Douglas Adams",
+        "ano": 1979,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Cem Anos de Solidão",
+        "autor": "Gabriel García Márquez",
+        "ano": 1967,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "O Retrato de Dorian Gray",
+        "autor": "Oscar Wilde",
+        "ano": 1890,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Fundação",
+        "autor": "Isaac Asimov",
+        "ano": 1951,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Grande Sertão: Veredas",
+        "autor": "Guimarães Rosa",
+        "ano": 1956,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "O Capital",
+        "autor": "Karl Marx",
+        "ano": 1867,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "A Arte da Guerra",
+        "autor": "Sun Tzu",
+        "ano": -500,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Pai Rico, Pai Pobre",
+        "autor": "Robert Kiyosaki",
+        "ano": 1997,
+        "status": "Disponível"
+    }
+]
