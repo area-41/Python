@@ -29,10 +29,22 @@ class Biblioteca:
                 return f"Aviso: '{titulo}' já está emprestado."
         return "Erro: Livro não encontrado."
 
+    """
     def listar_acervo(self) -> None:
-        """Imprime todos os livros e seus respectivos estados."""
+        # Imprime todos os livros e seus respectivos estados.
         for livro in self.__acervo:
             print(livro)
+    """
+
+    def listar_acervo(self):
+        if not self.get_acervo():
+            print("\n O acervo está vazio.")
+            return
+
+        print(f"\n{' ' * 20} LISTA DE LIVROS NO ACERVO")
+        for livro in self.get_acervo():
+            print(livro)  # Aqui chama o seu novo __str__
+
 
     @property
     def biblioteca__acervo(self):
@@ -45,3 +57,23 @@ class Biblioteca:
     def buscar_por_ano(self, ano: int) -> List[Livro]:
         """Retorna uma lista de livros publicados em um ano específico."""
         return [livro for livro in self.__acervo if livro.ano_publicacao == ano]
+
+    def buscar_por_genero(self, genero: str) -> List[Livro]:
+        """
+        Retorna uma lista de livros filtrados por gênero.
+
+        Args:
+            genero (str): O gênero a ser pesquisado.
+
+        Returns:
+            List[Livro]: Lista de objetos que pertencem ao gênero.
+        """
+        return [livro for livro in self.__acervo if genero.lower() in livro.genero.lower()]
+
+    def buscar_por_titulo(self, titulo: str) -> List[Livro]:
+        """Busca livros que contenham o termo no título."""
+        return [l for l in self.__acervo if titulo.lower() in l.titulo.lower()]
+
+    def buscar_por_editora(self, editora: str) -> List[Livro]:
+        """Busca livros de uma editora específica."""
+        return [l for l in self.__acervo if editora.lower() in l.editora.lower()]

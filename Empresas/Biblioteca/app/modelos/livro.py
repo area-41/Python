@@ -1,55 +1,55 @@
 class Livro:
     """
-        Representa um livro no sistema da biblioteca.
-
-        Esta classe gerencia as informações básicas de um livro e seu estado
-        de disponibilidade através de encapsulamento.
-
-        Attributes:
-            titulo (str): O título do livro.
-            autor (str): O autor da obra.
-            ano_publicacao (int): O ano em que o livro foi publicado.
-        """
-
-    def __init__(self, titulo: str, autor: str, ano_publicacao: int):
-        """
-                Inicializa um novo livro.
-
-                Args:
-                    titulo (str): Título da obra.
-                    autor (str): Nome do autor.
-                    ano_publicacao (int): Ano de lançamento.
-                """
+    Representa um livro com atributos detalhados e controle de estado privado.
+    """
+    def __init__(self, titulo: str, autor: str, ano: int, editora: str,
+                 paginas: int, isbn: str, genero: str, edicao: str = "1ª"):
         self.titulo = titulo
         self.autor = autor
-        self.ano_publicacao = ano_publicacao
-        self.__emprestado: bool = False  # Atributo privado: controle interno
+        self.ano_publicacao = ano
+        self.editora = editora
+        self.paginas = paginas
+        self.isbn = isbn
+        self.genero = genero
+        self.edicao = edicao
+        # Atributo privado
+        self.__emprestado: bool = False
 
     def emprestar(self) -> bool:
-        """
-                Altera o estado do livro para emprestado caso esteja disponível.
-
-                Returns:
-                    bool: True se o empréstimo foi realizado com sucesso,
-                          False se o livro já estava emprestado.
-                """
         if not self.__emprestado:
             self.__emprestado = True
             return True
         return False
 
     def devolver(self) -> None:
-        """Define o estado do livro como disponível."""
         self.__emprestado = False
 
     def status(self) -> str:
-        """
-                Retorna uma representação textual da disponibilidade.
-
-                Returns:
-                    str: 'Emprestado' ou 'Disponível'.
-                """
         return 'Emprestado' if self.__emprestado else 'Disponível'
 
+    """
     def __str__(self) -> str:
-        return f"{self.titulo} - {self.autor} ({self.status()})"
+        # Definindo um ícone visual para o status
+        status_cor = "🟢 Disponível" if not self.__emprestado else "🔴 Emprestado"
+
+        return (
+            f"{'=' * 60}\n"
+            f"📖 TÍTULO: {self.titulo.upper()} ({self.edicao} Ed.)\n"
+            f"✍️  AUTOR:  {self.autor:<25} | 🏷️ GÊNERO: {self.genero}\n"
+            f"🏢 EDITORA: {self.editora:<25} | 📅 ANO:    {self.ano_publicacao}\n"
+            f"🔢 ISBN:    {self.isbn:<25} | 📄 PÁGS:   {self.paginas}\n"
+            f"📊 STATUS:  {status_cor}\n"
+            f"{'=' * 60}"
+        )
+    
+    def __str__(self) -> str:
+        return (f"[{self.isbn}] {self.titulo} - {self.autor} | "
+                f"Editora: {self.editora} ({self.ano_publicacao}) | "
+                f"{self.paginas} pág. | Gênero: {self.genero} | "
+                f"Status: {self.status()}")
+    """
+
+    def __str__(self) -> str:
+        status_txt = "DISP" if not self.__emprestado else "EMPR"
+        return (f"[{status_txt}] {self.isbn} | {self.titulo[:25]:<25} | {self.autor[:15]:<15} | "
+                f"{self.editora[:10]:<10} | {self.ano_publicacao} | {self.paginas}p | {self.genero}")

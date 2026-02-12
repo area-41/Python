@@ -4,6 +4,7 @@ from ..modelos.biblioteca import Biblioteca
 
 
 class GestorDados:
+    """
     @staticmethod
     def salvar_acervo(biblioteca: Biblioteca, pasta: str = "data"):
         # Garante que a pasta existe antes de tentar salvar
@@ -27,6 +28,30 @@ class GestorDados:
             json.dump(dados, f, indent=4, ensure_ascii=False)
 
         print(f" Dados salvos com sucesso em {caminho_json}")
+"""
+
+    @staticmethod
+    def salvar_acervo(biblioteca: Biblioteca, pasta: str = "data"):
+        if not os.path.exists(pasta):
+            os.makedirs(pasta)
+
+        dados = []
+        for livro in biblioteca.get_acervo():
+            dados.append({
+                "titulo": livro.titulo,
+                "autor": livro.autor,
+                "ano": livro.ano_publicacao,
+                "editora": livro.editora,
+                "paginas": livro.paginas,
+                "isbn": livro.isbn,
+                "genero": livro.genero,
+                "edicao": livro.edicao,
+                "status": livro.status()
+            })
+
+        caminho_json = os.path.join(pasta, "acervo.json")
+        with open(caminho_json, "w", encoding="utf-8") as f:
+            json.dump(dados, f, indent=4, ensure_ascii=False)
 
     @staticmethod
     def carregar_acervo(caminho_json: str = "data/acervo.json") -> Biblioteca:
@@ -39,7 +64,16 @@ class GestorDados:
                 dados = json.load(f)
                 for item in dados:
                     from ..modelos.livro import Livro  # Import local para evitar circularidade
-                    livro = Livro(item['titulo'], item['autor'], item['ano'])
+                    livro = Livro(
+                        titulo=item['titulo'],
+                        autor=item['autor'],
+                        ano=item['ano'],
+                        editora=item['editora'],
+                        paginas=item['paginas'],
+                        isbn=item['isbn'],
+                        genero=item['genero'],
+                        edicao=item.get('edicao', '1ª')
+                    )
                     if item.get('status') == 'Emprestado':
                         livro.emprestar()
                     nova_bib.adicionar_livro(livro)

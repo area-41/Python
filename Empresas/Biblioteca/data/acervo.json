@@ -1,182 +1,222 @@
 [
     {
+        "titulo": "Código Limpo",
+        "autor": "Robert C. Martin",
+        "ano": 2008,
+        "editora": "Alta Books",
+        "paginas": 456,
+        "isbn": "978-8576082675",
+        "genero": "Tecnologia",
+        "edicao": "1ª",
+        "status": "Disponível"
+    },
+    {
         "titulo": "O Hobbit",
         "autor": "J.R.R. Tolkien",
         "ano": 1937,
+        "editora": "HarperCollins",
+        "paginas": 336,
+        "isbn": "978-8595084741",
+        "genero": "Fantasia",
+        "edicao": "1ª",
         "status": "Disponível"
     },
     {
         "titulo": "1984",
         "autor": "George Orwell",
         "ano": 1949,
-        "status": "Emprestado"
-    },
-    {
-        "titulo": "Dom Casmurro",
-        "autor": "Machado de Assis",
-        "ano": 1899,
-        "status": "Disponível"
-    },
-    {
-        "titulo": "O Pequeno Príncipe",
-        "autor": "Antoine de Saint-Exupéry",
-        "ano": 1943,
-        "status": "Disponível"
-    },
-    {
-        "titulo": "Frankenstein",
-        "autor": "Mary Shelley",
-        "ano": 1818,
-        "status": "Disponível"
-    },
-    {
-        "titulo": "O Algoritmo Mestre",
-        "autor": "Pedro Domingos",
-        "ano": 2015,
-        "status": "Disponível"
-    },
-    {
-        "titulo": "Admirável Mundo Novo",
-        "autor": "Aldous Huxley",
-        "ano": 1932,
-        "status": "Emprestado"
-    },
-    {
-        "titulo": "Código Limpo",
-        "autor": "Robert C. Martin",
-        "ano": 2008,
-        "status": "Emprestado"
-    },
-    {
-        "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
-        "autor": "J.R.R. Tolkien",
-        "ano": 1954,
-        "status": "Disponível"
-    },
-    {
-        "titulo": "Orgulho e Preconceito",
-        "autor": "Jane Austen",
-        "ano": 1813,
-        "status": "Disponível"
-    },
-    {
-        "titulo": "O Processo",
-        "autor": "Franz Kafka",
-        "ano": 1925,
+        "editora": "Companhia das Letras",
+        "paginas": 416,
+        "isbn": "978-8535914849",
+        "genero": "Ficção Distópica",
+        "edicao": "1ª",
         "status": "Disponível"
     },
     {
         "titulo": "Duna",
         "autor": "Frank Herbert",
         "ano": 1965,
+        "editora": "Aleph",
+        "paginas": 680,
+        "isbn": "978-8576573135",
+        "genero": "Ficção Científica",
+        "edicao": "1ª",
         "status": "Disponível"
     },
     {
-        "titulo": "A Metafísica",
-        "autor": "Aristóteles",
-        "ano": -350,
-        "status": "Disponível"
-    },
-    {
-        "titulo": "Crime e Castigo",
-        "autor": "Fiódor Dostoiévski",
-        "ano": 1866,
-        "status": "Disponível"
-    },
-    {
-        "titulo": "O Homem e seus Símbolos",
-        "autor": "Carl Jung",
-        "ano": 1964,
-        "status": "Disponível"
-    },
-    {
-        "titulo": "Sapiens: Uma Breve História da Humanidade",
-        "autor": "Yuval Noah Harari",
-        "ano": 2011,
-        "status": "Disponível"
-    },
-    {
-        "titulo": "O Programador Pragmático",
-        "autor": "Andrew Hunt",
-        "ano": 1999,
+        "titulo": "Dom Casmurro",
+        "autor": "Machado de Assis",
+        "ano": 1899,
+        "editora": "Carambaia",
+        "paginas": 256,
+        "isbn": "978-8569002211",
+        "genero": "Literatura Brasileira",
+        "edicao": "1ª",
         "status": "Disponível"
     },
     {
         "titulo": "Arquitetura Limpa",
         "autor": "Robert C. Martin",
         "ano": 2017,
+        "editora": "Alta Books",
+        "paginas": 432,
+        "isbn": "978-8550804606",
+        "genero": "Tecnologia",
+        "edicao": "1ª",
         "status": "Disponível"
     },
     {
-        "titulo": "Ensaio sobre a Cegueira",
-        "autor": "José Saramago",
-        "ano": 1995,
+        "titulo": "Sapiens",
+        "autor": "Yuval Noah Harari",
+        "ano": 2011,
+        "editora": "L&PM",
+        "paginas": 464,
+        "isbn": "978-8525432186",
+        "genero": "História/Ciência",
+        "edicao": "1ª",
         "status": "Disponível"
     },
     {
-        "titulo": "Moby Dick",
-        "autor": "Herman Melville",
-        "ano": 1851,
-        "status": "Disponível"
-    },
-    {
-        "titulo": "O Guia do Mochileiro das Galáxias",
-        "autor": "Douglas Adams",
-        "ano": 1979,
-        "status": "Disponível"
-    },
-    {
-        "titulo": "Cem Anos de Solidão",
-        "autor": "Gabriel García Márquez",
-        "ano": 1967,
-        "status": "Disponível"
-    },
-    {
-        "titulo": "O Retrato de Dorian Gray",
-        "autor": "Oscar Wilde",
-        "ano": 1890,
+        "titulo": "O Algoritmo Mestre",
+        "autor": "Pedro Domingos",
+        "ano": 2015,
+        "editora": "Novatec",
+        "paginas": 344,
+        "isbn": "978-8575225000",
+        "genero": "Tecnologia/IA",
+        "edicao": "1ª",
         "status": "Disponível"
     },
     {
         "titulo": "Fundação",
         "autor": "Isaac Asimov",
         "ano": 1951,
+        "editora": "Aleph",
+        "paginas": 240,
+        "isbn": "978-8576573005",
+        "genero": "Ficção Científica",
+        "edicao": "1ª",
         "status": "Disponível"
     },
     {
-        "titulo": "Grande Sertão: Veredas",
-        "autor": "Guimarães Rosa",
-        "ano": 1956,
+        "titulo": "O Processo",
+        "autor": "Franz Kafka",
+        "ano": 1925,
+        "editora": "Companhia de Bolso",
+        "paginas": 320,
+        "isbn": "978-8535907476",
+        "genero": "Clássico",
+        "edicao": "1ª",
         "status": "Disponível"
     },
     {
-        "titulo": "O Capital",
-        "autor": "Karl Marx",
-        "ano": 1867,
+        "titulo": "Crime e Castigo",
+        "autor": "Fiódor Dostoiévski",
+        "ano": 1866,
+        "editora": "Todavia",
+        "paginas": 592,
+        "isbn": "978-8588808411",
+        "genero": "Clássico",
+        "edicao": "1ª",
+        "status": "Disponível"
+    },
+    {
+        "titulo": "O Pequeno Príncipe",
+        "autor": "Antoine de Saint-Exupéry",
+        "ano": 1943,
+        "editora": "HarperCollins",
+        "paginas": 96,
+        "isbn": "978-8595081511",
+        "genero": "Infantil",
+        "edicao": "1ª",
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Frankenstein",
+        "autor": "Mary Shelley",
+        "ano": 1818,
+        "editora": "Zahar",
+        "paginas": 304,
+        "isbn": "978-8537815591",
+        "genero": "Terror/Gótico",
+        "edicao": "1ª",
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Admirável Mundo Novo",
+        "autor": "Aldous Huxley",
+        "ano": 1932,
+        "editora": "Biblioteca Azul",
+        "paginas": 312,
+        "isbn": "978-8525056009",
+        "genero": "Ficção Distópica",
+        "edicao": "1ª",
         "status": "Disponível"
     },
     {
         "titulo": "A Arte da Guerra",
         "autor": "Sun Tzu",
         "ano": -500,
+        "editora": "Best Seller",
+        "paginas": 160,
+        "isbn": "978-8576840336",
+        "genero": "Estratégia",
+        "edicao": "1ª",
         "status": "Disponível"
     },
     {
         "titulo": "Pai Rico, Pai Pobre",
         "autor": "Robert Kiyosaki",
         "ano": 1997,
+        "editora": "Alta Books",
+        "paginas": 336,
+        "isbn": "978-8550801483",
+        "genero": "Finanças",
+        "edicao": "1ª",
         "status": "Disponível"
     },
     {
-        "titulo": "Python Fluente",
-        "autor": "Luciano Ramalho",
-        "ano": 2015,
-        "status": "Emprestado"
+        "titulo": "Cem Anos de Solidão",
+        "autor": "Gabriel García Márquez",
+        "ano": 1967,
+        "editora": "Record",
+        "paginas": 448,
+        "isbn": "978-8501012074",
+        "genero": "Realismo Mágico",
+        "edicao": "1ª",
+        "status": "Disponível"
     },
     {
-        "titulo": "Python Fluente",
-        "autor": "Luciano Ramalho",
-        "ano": 2015,
+        "titulo": "Orgulho e Preconceito",
+        "autor": "Jane Austen",
+        "ano": 1813,
+        "editora": "Martin Claret",
+        "paginas": 424,
+        "isbn": "978-8572329272",
+        "genero": "Romance",
+        "edicao": "1ª",
+        "status": "Disponível"
+    },
+    {
+        "titulo": "O Retrato de Dorian Gray",
+        "autor": "Oscar Wilde",
+        "ano": 1890,
+        "editora": "Pandorga",
+        "paginas": 256,
+        "isbn": "978-8584422234",
+        "genero": "Clássico",
+        "edicao": "1ª",
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Grande Sertão: Veredas",
+        "autor": "Guimarães Rosa",
+        "ano": 1956,
+        "editora": "Companhia das Letras",
+        "paginas": 624,
+        "isbn": "978-8535932157",
+        "genero": "Literatura Brasileira",
+        "edicao": "1ª",
         "status": "Disponível"
     }
 ]
