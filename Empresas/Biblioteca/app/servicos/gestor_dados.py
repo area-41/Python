@@ -6,6 +6,7 @@ from ..modelos.biblioteca import Biblioteca
 class GestorDados:
     @staticmethod
     def salvar_acervo(biblioteca: Biblioteca, pasta: str = "data"):
+        # Garante que a pasta existe antes de tentar salvar
         if not os.path.exists(pasta):
             os.makedirs(pasta)
 

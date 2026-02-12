@@ -45,7 +45,7 @@
         "titulo": "Código Limpo",
         "autor": "Robert C. Martin",
         "ano": 2008,
-        "status": "Disponível"
+        "status": "Emprestado"
     },
     {
         "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
@@ -165,6 +165,18 @@
         "titulo": "Pai Rico, Pai Pobre",
         "autor": "Robert Kiyosaki",
         "ano": 1997,
+        "status": "Disponível"
+    },
+    {
+        "titulo": "Python Fluente",
+        "autor": "Luciano Ramalho",
+        "ano": 2015,
+        "status": "Emprestado"
+    },
+    {
+        "titulo": "Python Fluente",
+        "autor": "Luciano Ramalho",
+        "ano": 2015,
         "status": "Disponível"
     }
 ]

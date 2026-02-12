@@ -35,9 +35,13 @@ class Biblioteca:
             print(livro)
 
     @property
-    def Biblioteca__acervo(self):
-        return self._biblioteca__acervo
-
-    @property
     def biblioteca__acervo(self):
         return self._biblioteca__acervo
+
+    def buscar_por_autor(self, autor: str) -> List[Livro]:
+        """Retorna uma lista de livros de um autor específico."""
+        return [livro for livro in self.__acervo if autor.lower() in livro.autor.lower()]
+
+    def buscar_por_ano(self, ano: int) -> List[Livro]:
+        """Retorna uma lista de livros publicados em um ano específico."""
+        return [livro for livro in self.__acervo if livro.ano_publicacao == ano]
