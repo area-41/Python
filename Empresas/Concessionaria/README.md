@@ -1,4 +1,4 @@
-# 🚗 Sistema de Gerenciamento - Loja de Carros
+# 🚗 Sistema de Gerenciamento - Concessionária
 Este projeto faz parte do meu portfólio profissional (pasta empresas/) e simula o backend de um sistema de gerenciamento de estoque para uma concessionária. O objetivo principal é demonstrar o domínio de conceitos avançados de Programação Orientada a Objetos (POO) em Python.
 
 ## Tecnologias e Conceitos Aplicados
