@@ -15,6 +15,14 @@ Este projeto é uma demonstração prática de conceitos avançados de **Program
 - `data/`: Local onde o banco de dados JSON é armazenado.
 - `main.py`: Ponto de entrada com menu interativo.
 
+<img width="203" height="363" alt="image" src="https://github.com/user-attachments/assets/3663db3c-f2e0-4ba8-9ad9-b772f460e206" />
+
+## 📺 Demonstração do Projeto
+
+[![Demonstração do Sistema](https://img.youtube.com/vi/W36KTkNS89c/0.jpg)](https://www.youtube.com/watch?v=W36KTkNS89c)
+
+*Clique na imagem acima para assistir ao vídeo de demonstração.*
+
 ## Como Executar
 1. Clone o repositório.
 2. Certifique-se de que a estrutura de pastas está correta.
