@@ -59,10 +59,19 @@ Estabelecer um ciclo de Aprender e Repassar conhecimentos nessa linguagem de pro
     </tr>
     <tr>
       <td>04</td>
+      <td>Algoritmos de Empresas Simuladas</td>
+      <td align="center">
+        <a href="https://github.com/area-41/Python/tree/main/Empresas">
+           <img align="center" alt="Material de Apoio" src="https://img.shields.io/badge/Ver%20Material-FFFF66?style=for-the-badge">
+        </a>
+      </td>    
+    </tr>
+       <tr>
+      <td>05</td>
       <td>Sites e Materiais de Referência</td>
       <td align="center">
         <a href="https://github.com/area-41/Python/tree/main/Referencias">
-           <img align="center" alt="Material de Apoio" src="https://img.shields.io/badge/Ver%20Material-FFFF66?style=for-the-badge">
+           <img align="center" alt="Material de Apoio" src="https://img.shields.io/badge/Ver%20Material-5151C6?style=for-the-badge">
         </a>
       </td>    
     </tr>
