@@ -42,11 +42,26 @@ Execute um dos simuladores (exemplo: Folha de Pagamento):Bash
     python hr_payroll_system/main.py
 
 
-📂 Detalhes dos Projetos
+## Detalhes dos Projetos
 
 Análise de Risco (Fintech)Um simulador que recebe dados de um cliente e decide se o empréstimo será aprovado.
 Regra de Negócio: Se o comprometimento da renda for $> 30\%$, o crédito é negado.
 
-Destaque: Uso de tratamento de erros para dados de entrada inválidos.
+  Destaque: Uso de tratamento de erros para dados de entrada inválidos.
 
-Gestão de Logística (E-commerce)Simula a priorização de entregas com base na data de compra e tipo de frete (Expresso vs. Normal).Regra de Negócio: Implementação de uma fila de prioridade para pedidos VIP.🛠️ Tecnologias UtilizadasPython 3.10+Bibliotecas nativas: math, datetime, json, random.(Opcional) Pandas: Para manipulação de tabelas de dados simuladas.🤝 ContribuindoSinta-se à vontade para abrir uma Issue ou enviar um Pull Request com novos cenários de empresas (ex: algoritmos para Seguradoras, Hospitais ou Companhias Aéreas).Desenvolvido por [Seu Nome]Conecte-se comigo no LinkedIn
+Gestão de Logística (E-commerce)
+Simula a priorização de entregas com base na data de compra e tipo de frete (Expresso vs. Normal).
+
+  Regra de Negócio: Implementação de uma fila de prioridade para pedidos VIP.
+
+## Tecnologias Utilizadas
+
+Python 3.10+
+- Bibliotecas nativas: math, datetime, json, random.(Opcional) 
+- Pandas: Para manipulação de tabelas de dados simuladas.
+
+## Contribuindo
+
+Sinta-se à vontade para abrir uma Issue ou enviar um Pull Request com novos cenários de empresas (ex: algoritmos para Seguradoras, Hospitais ou Companhias Aéreas).
+
+Desenvolvido por [Victor Marques](https://github.com/area-41)
