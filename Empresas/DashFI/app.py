@@ -32,17 +32,23 @@ with st.sidebar:
 ticker_data = yf.Ticker(ticker_symbol)
 df = ticker_data.history(period=periodo)
 
-# 3. Exibição de Métricas
-if not df.empty:
+# 3. Verificação de Dados e Exibição de Métricas
+if len(df) > 1:  # Garante que temos pelo menos 2 linhas para calcular a variação
     preco_atual = df['Close'].iloc[-1]
-    variacao = df['Close'].iloc[-1] - df['Close'].iloc[-2]
-    pct_variacao = (variacao / df['Close'].iloc[-2]) * 100
+    preco_anterior = df['Close'].iloc[-2]
+    variacao = preco_atual - preco_anterior
+    pct_variacao = (variacao / preco_anterior) * 100
 
     col1, col2 = st.columns(2)
-    col1.metric(label=f"Preço Atual ({escolha})", value=f"{preco_atual:.2f}", delta=f"{pct_variacao:.2f}%")
+    col1.metric(
+        label=f"Preço Atual ({escolha})", 
+        value=f"{preco_atual:.2f}", 
+        delta=f"{pct_variacao:.2f}%"
+    )
     
     # 4. Gráfico Interativo
-    fig = go.Figure(data=[go.Candlestick(x=df.index,
+    fig = go.Figure(data=[go.Candlestick(
+                x=df.index,
                 open=df['Open'],
                 high=df['High'],
                 low=df['Low'],
@@ -50,7 +56,14 @@ if not df.empty:
     
     fig.update_layout(title=f"Histórico de Preços - {escolha}", template="plotly_dark")
     st.plotly_chart(fig, use_container_width=True)
-    
+
+elif len(df) == 1:
+    st.warning("Dados insuficientes para calcular a variação (apenas 1 registro encontrado).")
+    st.metric(label=f"Preço Atual ({escolha})", value=f"{df['Close'].iloc[-1]:.2f}")
+else:
+    st.error(f"Nenhum dado encontrado para o ticker '{ticker_symbol}'. Verifique se o mercado está aberto ou se o símbolo está correto.")
+
+  
     # Exibir tabela de dados brutos
     with st.expander("Ver dados brutos"):
         st.write(df)
