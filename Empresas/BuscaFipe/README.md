@@ -4,7 +4,12 @@ Material de estudo de programação Python a fim de desenvovlver um aplicativo *
 
 O objetivo é oferecer uma interface simples e amigável para qualquer usuário consultar preços médios de veículos no Brasil através da base de dados da FIPE.
 
+
 📍 **Acesse o projeto aqui:** [BuscaFIPE Online](https://buscafipe-55aybbvvqkassasgtvz35x.streamlit.app/)
+<img width="1269" height="607" alt="image" src="https://github.com/user-attachments/assets/73d88143-a3d6-4ad3-9612-69614c14d6d1" />
+
+
+📍 **Vídeo do uso:** [Video do uso](https://youtu.be/1GPleylVmVE)
 
 ---
 
