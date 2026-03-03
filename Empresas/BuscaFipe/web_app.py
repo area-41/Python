@@ -65,8 +65,7 @@ def main():
                             st.download_button("📥 Baixar CSV", csv, "fipe.csv", "text/csv")
         else:
             st.warning(f"Nenhuma marca encontrada com a letra '{letra}'.")
-    else:
-        st.error("Erro ao conectar com a API. Verifique sua conexão.")
+            
 
 if __name__ == "__main__":
     main()
