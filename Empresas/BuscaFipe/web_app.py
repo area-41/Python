@@ -26,6 +26,17 @@ def main():
     # 2. Busca de Marcas
     marcas_df = api.listar_marcas()
     
+    # DEBUG: Vamos ver as primeiras 5 marcas que a API retornou
+    if not marcas_df.empty:
+    st.write("🔍 Debug - Primeiras marcas da API:", marcas_df['nome'].head().tolist())
+    
+    # Filtro atualizado para ser "à prova de balas"
+    marcas_filtradas = marcas_df[
+        marcas_df['nome'].str.strip().str.upper().str.startswith(letra)
+    ]
+    
+    st.write(f"📊 Total encontrado para a letra {letra}: {len(marcas_filtradas)}")
+    
     if not marcas_df.empty:
         # Filtro flexível para evitar erros de espaços ou maiúsculas/minúsculas
         marcas_filtradas = marcas_df[
