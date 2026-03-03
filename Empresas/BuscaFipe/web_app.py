@@ -5,40 +5,31 @@ from core.fipe_handler import FipeAPI
 # Configuração da Página
 st.set_page_config(page_title="Consulta Tabela FIPE 2026", page_icon="🚗")
 
-
 def main():
     api = FipeAPI()
     
     st.title("🚗 Consulta Tabela FIPE")
     st.markdown("Busque preços atualizados de veículos de forma simples.")
 
-    # 1. Sidebar para a Letra (Garante que 'letra' sempre exista)
+    # 1. Sidebar para a Letra
     st.sidebar.header("Filtros")
     letra = st.sidebar.selectbox(
         "Selecione a letra inicial da marca:", 
         list("ABCDEFGHIJKLMNOPQRSTUVWXYZ"),
-        index=0 # Começa no 'A' por padrão
+        index=0
     )
 
-    # Agora st.write funcionará, pois 'letra' já foi definida acima
     st.write(f"Filtrando marcas que começam com: **{letra}**")
 
     # 2. Busca de Marcas
     marcas_df = api.listar_marcas()
     
-    # DEBUG: Vamos ver as primeiras 5 marcas que a API retornou
     if not marcas_df.empty:
-    st.write("🔍 Debug - Primeiras marcas da API:", marcas_df['nome'].head().tolist())
-    
-    # Filtro atualizado para ser "à prova de balas"
-    marcas_filtradas = marcas_df[
-        marcas_df['nome'].str.strip().str.upper().str.startswith(letra)
-    ]
-    
-    st.write(f"📊 Total encontrado para a letra {letra}: {len(marcas_filtradas)}")
-    
-    if not marcas_df.empty:
-        # Filtro flexível para evitar erros de espaços ou maiúsculas/minúsculas
+        # A LINHA ABAIXO DEVE ESTAR IDENTADA (4 ESPAÇOS OU 1 TAB)
+        # Debug para ver o que a API está trazendo
+        # st.write("🔍 Debug - Primeiras marcas:", marcas_df['nome'].head().tolist())
+
+        # Filtro robusto: Remove espaços e garante comparação em maiúsculo
         marcas_filtradas = marcas_df[
             marcas_df['nome'].str.strip().str.upper().str.startswith(letra)
         ]
@@ -63,14 +54,19 @@ def main():
                     ano_nome = st.selectbox("Selecione o Ano/Combustível:", options=list(opcoes_anos.keys()))
                     id_ano = opcoes_anos[ano_nome]
 
-                    # Resultado Final
                     if st.button("Consultar Preço"):
                         resultado = api.buscar_preco_final(id_marca, id_modelo, id_ano)
                         if not resultado.empty:
                             st.success(f"### Valor: {resultado['Valor'].iloc[0]}")
-                            st.info(f"**Modelo:** {resultado['Modelo'].iloc[0]} | **Referência:** {resultado['MesReferencia'].iloc[0]}")
+                            st.info(f"**Modelo:** {resultado['Modelo'].iloc[0]}")
+                            
+                            # Botão de download CSV que criamos anteriormente
+                            csv = resultado.to_csv(index=False).encode('utf-8')
+                            st.download_button("📥 Baixar CSV", csv, "fipe.csv", "text/csv")
         else:
             st.warning(f"Nenhuma marca encontrada com a letra '{letra}'.")
+    else:
+        st.error("Erro ao conectar com a API. Verifique sua conexão.")
 
 if __name__ == "__main__":
     main()
