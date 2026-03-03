@@ -10,6 +10,11 @@ def main():
     api = FipeAPI()
 
     st.title("🚗 Consulta Tabela FIPE")
+    st.write(f"Letra selecionada: {letra}")
+    st.write(f"Quantidade de marcas encontradas: {len(marcas_filtradas)}")
+    if st.checkbox("Mostrar tabela de marcas filtradas"):
+       st.write(marcas_filtradas)
+    
     st.markdown("Busque preços atualizados de veículos de forma simples.")
 
     # --- PASSO 1: FILTRO ALFABÉTICO ---
