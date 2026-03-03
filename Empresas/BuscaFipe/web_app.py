@@ -18,6 +18,8 @@ def main():
                                  list("ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
 
     marcas_df = api.listar_marcas()
+    # Filtra ignorando espaços antes do nome e garantindo que é maiúsculo
+    marcas_df = marcas_df[marcas_df['nome'].str.strip().str.upper().str.startswith(letra)]
 
     if not marcas_df.empty:
         # Filtragem por letra
