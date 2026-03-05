@@ -27,9 +27,9 @@ def main():
     if not marcas_df.empty:
         # A LINHA ABAIXO DEVE ESTAR IDENTADA (4 ESPAÇOS OU 1 TAB)
         # Debug para ver o que a API está trazendo
-        # st.write("🔍 Debug - Primeiras marcas:", marcas_df['nome'].head().tolist())
+        # st.write("Debug - Primeiras marcas:", marcas_df['nome'].head().tolist())
 
-        # Filtro robusto: Remove espaços e garante comparação em maiúsculo
+        # Filtro que remove espaços e garante comparação em maiúsculo
         marcas_filtradas = marcas_df[
             marcas_df['nome'].str.strip().str.upper().str.startswith(letra)
         ]
@@ -51,7 +51,7 @@ def main():
                 anos_df = api.listar_anos(id_marca, id_modelo)
                 if not anos_df.empty:
                     opcoes_anos = dict(zip(anos_df['nome'], anos_df['codigo']))
-                    ano_nome = st.selectbox("Selecione o Ano/Combustível:", options=list(opcoes_anos.keys()))
+                    ano_nome = st.selectbox("Selecione o Ano:", options=list(opcoes_anos.keys()))
                     id_ano = opcoes_anos[ano_nome]
 
                     if st.button("Consultar Preço"):
@@ -60,13 +60,13 @@ def main():
                             st.success(f"### Valor: {resultado['Valor'].iloc[0]}")
                             st.info(f"**Modelo:** {resultado['Modelo'].iloc[0]}")
                             
-                            # Botão de download CSV que criamos anteriormente
+                            # Botão de download CSV
                             csv = resultado.to_csv(index=False).encode('utf-8')
                             st.download_button("📥 Baixar CSV", csv, "fipe.csv", "text/csv")
         else:
             st.warning(f"Nenhuma marca encontrada com a letra '{letra}'.")
     else:
-        st.error("Erro ao conectar com a API. Verifique sua conexão.")
+        st.error("Erro ao conectar com a API. Verifique a conexão.")
             
 
 if __name__ == "__main__":
