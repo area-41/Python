@@ -23,6 +23,7 @@ Foram utilizadas as seguintes ferramentas de engenharia de software:
 * **Requests:** Para comunicação assíncrona com a API Parallelum FIPE.
 * **PyCharm:** IDE utilizada para o desenvolvimento e organização da estrutura.
 * **GitHub Actions:** Para garantir a integridade do código.
+* **Gemini** AI pair programming
 
 ---
 
@@ -64,3 +65,4 @@ Instale as dependências:
 Execute o Streamlit:
 
     streamlit run web_app.py
+
