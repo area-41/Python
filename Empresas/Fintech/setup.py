@@ -8,7 +8,7 @@ setup(
     description="Simulador de Análise de Risco de Crédito para Fintechs.",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/seu-usuario/fintech-risk-engine",
+    url="https://github.com/area-41/Python/Empresas/Fintech",
 
     # Define onde o código fonte está localizado
     package_dir={"": "src"},
@@ -19,7 +19,7 @@ setup(
         # Exemplo: "pandas>=1.3.0",
     ],
 
-    # Classificadores ajudam as pessoas a encontrar seu projeto no PyPI
+    # Classificadores ajudam a encontrar o projeto no PyPI
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
