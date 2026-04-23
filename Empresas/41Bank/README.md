@@ -76,10 +76,22 @@ Instale as dependências:
 Execute os testes de concorrência:
 
     python main.py
+
+
+## ⌨️ Interface de Linha de Comando (CLI)
+
+O sistema conta com uma CLI para operações administrativas rápidas.
+
+### Comandos Disponíveis:
+
+1. **Criar Conta:**
+   ```bash
+   python cli.py criar [NOME] --saldo [VALOR]
+   
     
 #### Próximos Passos (Roadmap)
 [ ] Implementar JWT para sessões de usuário.
 
-[ ] Migrar persistência de arquivos flat para SQLite criptografado.
+[X] Migrar persistência de arquivos flat para SQLite criptografado.
 
 [ ] Interface via FastAPI para operações remotas.
