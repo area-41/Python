@@ -87,8 +87,19 @@ O sistema conta com uma CLI para operações administrativas rápidas.
 1. **Criar Conta:**
    ```bash
    python cli.py criar [NOME] --saldo [VALOR]
-   
-    
+
+
+### Tests
+![alt text](image-2.png)
+
+- Ambiente limpo: O GitHub criou um container Ubuntu do zero.
+
+- Dependências resolvidas: Instalou cryptography e pytest com sucesso.
+
+- Execução direcionada: O comando cd Empresas/41Bank funcionou perfeitamente, provando que você sabe gerenciar monorepos (repositórios com múltiplos projetos).
+
+- Testes Verdes: collected 2 items / 2 passed in 0.01s.
+
 #### Próximos Passos (Roadmap)
 [ ] Implementar JWT para sessões de usuário.
 
