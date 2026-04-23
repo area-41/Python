@@ -15,6 +15,11 @@ class Conta(ABC):
     def saldo(self):
         return self.__saldo
 
+    @property
+    def titular(self):
+        """Permite ler o titular como conta.titular em vez de conta._titular"""
+        return self._titular
+
     def _alterar_saldo(self, valor):
         """Método protegido para alteração interna."""
         self.__saldo += valor

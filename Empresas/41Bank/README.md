@@ -23,6 +23,8 @@ As senhas dos usuários passam por um processo de hashing SHA-256. Diferente da 
 2. Criptografia de Arquivos (AES-128)
 Os arquivos de persistência (.dat) são protegidos via Fernet (criptografia simétrica).
 
+![alt text](image.png)
+
 Como gerar sua chave secreta:
 Para que o sistema funcione, você deve gerar uma chave e configurá-la como variável de ambiente ou injetá-la no PersistenceManager:
 
@@ -56,6 +58,16 @@ Python
     salvar_conta(conta): Converte o objeto para JSON, criptografa com AES e grava em data/.
     
     carregar_conta(titular): Localiza o arquivo, decriptografa e reconstrói o estado do objeto.
+
+#### Threads
+![alt text](image-1.png)
+
+##### Análise do Resultado
+- Total enviado para Investimentos: $190$ transferências de $10.0$ com sucesso ($1900.0$).
+- Taxas consumidas: $190$ transações $\times$ $0.50$ de taxa = $95.0$.
+- Cálculo final Victor: $2000 - 1900$ (enviados) $- 95$ (taxas) $= 5.0$.
+- Cálculo final Investimentos: $500 + 1900 = 2400.0$.
+Isso demonstra que a lógica de Herança (buscar a taxa da classe filha) e seu Lock de Concorrência funcionaram sob estresse. Nenhuma thread "atropelou" a outra, e o saldo foi deduzido com precisão cirúrgica, incluindo as taxas.
 
 #### Como Executar
 Instale as dependências:
