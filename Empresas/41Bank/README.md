@@ -1,5 +1,5 @@
 # 41Bank
-![Tests](https://github.com/area-41/Python/actions/workflows/python-tests.yml/badge.svg)
+[![Python Tests](https://github.com/area-41/Python/actions/workflows/41bank_test.yml/badge.svg)](https://github.com/area-41/Python/actions/workflows/41bank_test.yml)
 ### 🏦 Banking System Core (Python) 
 Sistema bancário robusto desenvolvido em Python, focado em concorrência segura (thread-safety) e proteção de dados sensíveis. 
 O projeto aplica princípios de Programação Orientada a Objetos (POO), criptografia AES para persistência e hashing para credenciais.
